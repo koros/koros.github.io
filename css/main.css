@@ -1,0 +1,187 @@
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*adding a black bg to the body to make things clearer*/
+body {
+	background: black;
+	color: green;
+}
+body p{
+	color: white;
+	font-size: 20px;
+}
+canvas {
+	display: block;
+	width: 100%;
+    height: 100%;
+}
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.nav-section img{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+.content {
+    border-radius: 5px;
+    border-color: green;
+    border-width: 2px;
+    border-style: solid;
+    background-image: url("../images/matrix-background.png");
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
+.header-div{
+	width: 100%;
+    height: 80%;
+	display: block;
+    float:top;
+}
+.right-content{
+	padding-left: 0px;
+    padding-right: 0px;
+    background: black;
+}
+.right-content img{
+    width: 100%;
+    height: 100%;
+    padding: 0 !important;
+   	margin: 0 !important;
+}
+.system-failure{
+	border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 0.8;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    background-color: black;
+    color: green;
+    border-style: solid;
+    border-color: green;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: black; 
+    color: white; 
+    border: 2px solid green;
+}
+.button:hover {
+    background-color: green;
+    color: white;
+}
+.about{
+	display: block;
+}
+.my-work{
+	display: none;
+}
+.contact{
+	display: none;
+}
+.left-content{
+	/* green border to the right*/
+	border-right:solid green 2px;
+}
+.social {
+    margin: 0;
+    padding: 0;
+}
+.social ul {
+    margin: 0;
+    padding: 5px;
+}
+.social ul li {
+    margin: 5px;
+    list-style: none outside none;
+}
+.social i {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    background-color: #909AA0;
+    font-size: 22px;
+    text-align:center;
+    padding-top: 12px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+.social i:hover {
+    color: #FFF;
+    background-color: green;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+a:link, a:visited {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    padding-right: 20px;
+    padding-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+}
+a:hover, a:active {
+    background-color: black;
+    color: green;
+}
+.image-text{
+	position:absolute;
+	left:0;
+	bottom:0;
+	background-color: black;
+	padding-left: 7px;
+	padding-right: 7px;
+	opacity: 0.7;
+}
+.about-bottom{
+	clear:both;
+	font-size: 16px;
+}
+.about-bottom p{
+    border: none;
+    color: white;
+    padding-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    background-color: black; 
+    color: white; 
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
