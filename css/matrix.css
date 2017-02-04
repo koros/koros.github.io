@@ -1,0 +1,14 @@
+body {
+	background-color: black;
+    color: green;
+	text-overflow: ellipsis;
+	/* Required for text-overflow to do anything */
+	white-space: nowrap;
+	overflow: hidden;
+	overflow-y: hidden; // hide vertical
+	overflow-x: hidden; // hide horizontal
+	font-size:1em;
+}
+.content{
+	
+}
