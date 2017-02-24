@@ -16,15 +16,24 @@
 </head>
 
 <style type="text/css">
+	@font-face {
+	    font-family:"Ocr";
+	    src: url("./fonts/ocratxt.ttf") 
+	}
+	@font-face {
+	    font-family:"Ubuntu";
+	    src: url("../fonts/ubuntu-font-family-0.83/Ubuntu-M.ttf")
+	}
 	body {
 		background-color: black;
-	    color: green;
+	    color: #00FF00;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 		overflow: hidden;
 		overflow-y: hidden;
 		overflow-x: hidden;
 		font-size:1em;
+		font-family: 'Ocr', 'Georgia', serif;
 	}
 </style>
 
@@ -94,7 +103,7 @@ function repaintDiv() {
 	  var randomNumberString = "";
 	  for(j = 0; j < 20; j++){
 		  var randomStr = "" + Math.random();
-		  randomStr = randomStr.substring(2, 12) + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"; 
+		  randomStr = randomStr.substring(2, 12) + "&nbsp;&nbsp;&nbsp;&nbsp;"; 
 		  randomNumberString += randomStr;
 	  }
 	  divs[i].innerHTML = randomNumberString;
