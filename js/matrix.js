@@ -10,7 +10,7 @@ var chinese = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄�
 //converting the string into an array of single characters
 chinese = chinese.split("");
 
-var font_size = 10;
+var font_size = 14;
 var columns = c.width/font_size; //number of columns for the rain
 //an array of drops - one per column
 var drops = [];
@@ -27,7 +27,7 @@ function draw()
 	ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
 	ctx.fillRect(0, 0, c.width, c.height);
 	
-	ctx.fillStyle = "#0F0"; //green text
+	ctx.fillStyle = "#00FF00"; //green text
 	ctx.font = font_size + "px arial";
 	//looping over drops
 	for(var i = 0; i < drops.length; i++)
@@ -49,24 +49,24 @@ function draw()
 
 setInterval(draw, 33);
 
-$( "#about" ).click(function() {
-  	$( ".about" ).fadeIn( "slow" );
-  	$(".my-work").css("display", "none"); 
-  	$(".contact").css("display", "none");
-});
+document.getElementById("date").innerHTML = getFormattedDate();
 
-$( "#my-work" ).click(function() {
-	$( ".my-work" ).fadeIn( "slow" );
-	$(".about").css("display", "none"); 
-  	$(".contact").css("display", "none");
-});
-
-$( "#contact" ).click(function() {
-	$( ".contact" ).fadeIn( "slow" );
-	$(".my-work").css("display", "none"); 
-  	$(".about").css("display", "none");
-});
-
-function setUpNavigation(){
-
+function getFormattedDate() {
+    var d = new Date(),
+    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+    ampm = d.getHours() >= 12 ? 'pm' : 'am',
+    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+	return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+' '+ampm;
 }
+
+$('.my-nav').click(function() {
+	// highlight the clicked link
+	$(".my-nav").removeClass("my-nav-active");
+	$(this).addClass("my-nav-active");
+
+	var selectedItem = $(this).data("link");
+	$(".data-toggle").removeClass("active");
+	$("." + selectedItem).addClass("active");
+});

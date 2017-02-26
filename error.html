@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="korosmatic">
+
+    <title>Koros - Personal Website</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<style type="text/css">
+	@font-face {
+	    font-family:"Ocr";
+	    src: url("./fonts/ocratxt.ttf") 
+	}
+	@font-face {
+	    font-family:"Ubuntu";
+	    src: url("../fonts/ubuntu-font-family-0.83/Ubuntu-M.ttf")
+	}
+	body {
+		background-color: black;
+	    color: #00FF00;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		overflow-y: hidden;
+		overflow-x: hidden;
+		font-size:1em;
+		font-family: 'Ocr', 'Georgia', serif;
+	}
+</style>
+
+
+<body>
+
+<div id="background">
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+	<div ></div>
+</div>
+
+
+
+<div class="system-failure">
+	<H1>SYSTEM FAILURE</H1>
+</div>
+
+
+</body>
+
+<script>
+
+setInterval(function(){ repaintDiv(); }, 100);
+
+function repaintDiv() {
+	var backgroundDiv = document.getElementById("background");
+	var divs = backgroundDiv.getElementsByTagName("div");
+	for(var i = 0; i < divs.length; i++){
+	  var randomNumberString = "";
+	  for(j = 0; j < 20; j++){
+		  var randomStr = "" + Math.random();
+		  randomStr = randomStr.substring(2, 12) + "&nbsp;&nbsp;&nbsp;&nbsp;"; 
+		  randomNumberString += randomStr;
+	  }
+	  divs[i].innerHTML = randomNumberString;
+	}
+}
+
+</script>
+
+</html>

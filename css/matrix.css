@@ -1,6 +1,6 @@
 body {
 	background-color: black;
-    color: green;
+    color: #00FF00;
 	text-overflow: ellipsis;
 	/* Required for text-overflow to do anything */
 	white-space: nowrap;

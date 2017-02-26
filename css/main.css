@@ -3,7 +3,7 @@
 /*adding a black bg to the body to make things clearer*/
 body {
 	background: black;
-	color: green;
+	color: #00FF00;
 }
 body p{
 	color: white;
@@ -27,9 +27,9 @@ canvas {
 }
 .content {
     border-radius: 5px;
-    border-color: green;
-    border-width: 2px;
-    border-style: solid;
+    border-color: #00FF00;
+    border-width: 1px;
+    border-style: double;
     background-image: url("../images/matrix-background.png");
     position: absolute;
     top: 10%;
@@ -65,9 +65,108 @@ canvas {
     opacity: 0.8;
     filter: alpha(opacity=50); /* For IE8 and earlier */
     background-color: black;
-    color: green;
+    color: #FF00FF00;
     border-style: solid;
-    border-color: green;
+    border-color: #FF00FF00;
+}
+.about {
+    border-color: gray;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+.skills-list {
+    border-radius: 3px;
+    background-color: black;
+    color: #FF00FF00;
+    border-style: solid;
+    border-color: #FF00FF00;
+    border-width: 1px;
+}
+.skills-inner-top-left {
+    border-color: cyan;
+    border-width: 0.5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    height: 150px;
+}
+.skills-inner-top-right {
+    border-color: gray;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 150px;
+}
+.skills-inner-bottom-left {
+    border-color: white;
+    margin-left: 5px;
+    height: 100px;
+    overflow:hidden; 
+    overflow-y:scroll;
+}
+.skills-inner-bottom-right {
+    border-color: gray;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 100px;
+}
+.skills-container {
+    background-color: black;
+    color: #FF00FF00;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 5px;
+    position: relative;
+    margin-top: -9px;
+    z-index: 1;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.container-header {
+    margin-left: 25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: #000;
+    z-index: 2;
+    position: relative;
+    /*border-style: solid;
+    border-color: #FF00FF00;
+    border-width: 1px; */
+}
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: grey; 
+    -webkit-box-shadow: inset 0 0 2px white; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: grey; 
+}
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
 }
 .button {
     background-color: #4CAF50; /* Green */
@@ -90,14 +189,13 @@ canvas {
     background-color: green;
     color: white;
 }
-.about{
-	display: block;
-}
 .my-work{
 	display: none;
+	padding: 15px;
 }
 .contact{
 	display: none;
+	padding: 15px;
 }
 .left-content{
 	/* green border to the right*/
@@ -114,16 +212,18 @@ canvas {
 .social ul li {
     margin: 5px;
     list-style: none outside none;
+    display: inline;
 }
 .social i {
     width: 40px;
     height: 40px;
-    color: #FFF;
-    background-color: #909AA0;
+    color: #00FF00;
+    background-color: black;
     font-size: 22px;
     text-align:center;
     padding-top: 12px;
     border-radius: 50%;
+    border:solid #00FF00 1px;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     -o-border-radius: 50%;
@@ -184,4 +284,90 @@ a:hover, a:active {
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
+}
+@font-face {
+    font-family:"Ocr";
+    src: url("../fonts/ocratxt.ttf")
+}
+@font-face {
+    font-family:"monaco";
+    src: url("../fonts/monaco.ttf")
+}
+@font-face {
+    font-family:"Ubuntu";
+    src: url("../fonts/ubuntu-font-family-0.83/Ubuntu-M.ttf")
+}
+body { 
+    font-family: 'Ubuntu', 'Ocr', 'Georgia', serif; 
+}
+.dashes {
+    background-color: black;
+    color: #00FF00;
+    text-overflow: none;
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-size:1em;
+    font-family: 'Ubuntu', 'Ocr', 'Georgia', serif;
+}
+a:link, a:visited {
+    color: #FFFF00;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+}
+a:hover, a:active {
+    background-color: black;
+    text-decoration: underline;
+    font-size: 0.8em;
+}
+.footer {
+    position: relative;
+    bottom: 0px;
+    margin-top: 10px;
+    background: black;
+    padding-top: 5px;
+}
+.copyright-div {
+    padding-top: 20px;
+    height: 40px;
+}
+.copyright-div span {
+    position: relative;
+    bottom: 0px;
+}
+.date {
+    margin: 5px;
+    padding: 5px;
+}
+.skills ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-left: -15px;
+    padding-right: 10px;
+}
+.my-nav:hover {
+    color: white;
+    background-color: #3465A4;
+}
+.my-nav-active {
+    color: white;
+    background-color: #3465A4;
+}
+.data-toggle {
+    display: none;
+}
+.active {
+    display: block;
+}
+span.active {
+    display: inline;
+    color: gray;
+}
+.info {
+    color: #FFFF00; 
+    font-size: 0.8em;"
 }

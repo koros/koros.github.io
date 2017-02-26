@@ -17,6 +17,8 @@
     <!-- Font awesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
 
+    <link href="css/main.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,10 +29,303 @@
 </head>
 
 <body>
+    <div class="background">
+            <canvas id="c"></canvas>
+    </div>
 
     <div class="container">
-		<h1> coming soon! <h1>
-	<div>
+        <!-- Content Section -->
+        <div class="content row">
+            
+            
+            <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12 nopadding dashes">
+                    
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 date">
+                    <span id="date"></span> 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 nopadding">
+                    <div >
+                        <span class="container-header"> About </span>
+                    </div>
+                    <div class="skills-container about">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <span></span> 
+                                    </div>
+                                    <div class="col-md-11">
+                                        <span> I am a software developer of web and mobile applications. I have main experience in Java, Spring framework, and the Android platform. I also have some experience with iOS development. Currently i am learning and experimenting with Node.js, i am particularly keen on getting best performance with least amount of resources </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 date">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <span></span> 
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4 nopadding">
+                            <div >
+                                <span class="container-header"> skills </span>
+                            </div>
+                            <div class="skills-container skills-inner-top-left">
+                                <div class="row">
+                                    <div class="col-md-12 skills">
+                                        <ul>
+                                            <li class="col-md-12 my-nav my-nav-active" data-link="android"> Android </li>
+                                            <li class="col-md-12 my-nav" data-link="spring"> Spring </li>
+                                            <li class="col-md-12 my-nav" data-link="ios"> iOS</li>
+                                            <li class="col-md-12 my-nav" data-link="node"> Node.js/Javascript/Mean/Css</li>
+                                            <li class="col-md-12 my-nav" data-link="other"> Other</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 nopadding">
+                            <div >
+                                <span class="container-header"> details 
+                                    <span class="data-toggle android active"> [ android ] </span> 
+                                    <span class="data-toggle spring"> [ spring ] </span>
+                                    <span class="data-toggle ios"> [ iOS ] </span>
+                                    <span class="data-toggle node"> [ nodejs ] </span>
+                                    <span class="data-toggle other"> [ other ] </span>
+                                </span>
+                            </div>
+                            <div class="skills-container skills-inner-top-right">
+                                <div class="row data-toggle android active">
+                                    <div class="col-md-12">
+                                        <ul> 
+                                            <li> Developed a vast array of Android apps ranging from Lifestyle, News/Current affairs, Data collection, Multimedia Streaming and Games applications. Dealt with both hardware and software challenges e.g supporting devices from multiple vendors and different API levels </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row data-toggle spring">
+                                    <div class="col-md-12">
+                                        <ul> 
+                                            <li> Build several enterprise projects with Spring framework  </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row data-toggle ios">
+                                    <div class="col-md-12">
+                                        <ul> 
+                                            <li> Worked on an iOS music streaming app </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row data-toggle node">
+                                    <div class="col-md-12">
+                                        <ul> 
+                                            <li> Currently experimenting and building some stuff with Node particularly keen on its async. nature and limited resource usage </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row data-toggle other">
+                                    <div class="col-md-12">
+                                        <ul> 
+                                            <li> Collection of other misc. stuff </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-eq-height">
+                        <div class="col-md-4 nopadding">
+                            <div >
+                                <span class="container-header">technologies
+                                    <span class="data-toggle android active"> [ android ] </span> 
+                                    <span class="data-toggle spring"> [ spring ] </span>
+                                    <span class="data-toggle ios"> [ iOS ] </span>
+                                    <span class="data-toggle node"> [ nodejs ] </span>
+                                    <span class="data-toggle other"> [ other ] </span>
+                                </span>
+                            </div>
+                            <div class="skills-container skills-inner-bottom-left">
+                                <div class="row data-toggle android active">
+                                    <div class="col-md-12">
+                                        <ul>
+                                            <li> Instrumented tests <span class="info">( Espresso, Roboletric ) </span></li>
+                                            <li> Dagger</li>
+                                            <li> Retrofit </li>
+                                            <li> ButterKnife </li>
+                                            <li> MVVM </li>
+                                            <li> MVP </li>
+                                            <li> Cordova </li>
+                                            <li> ORMs <span class="info"> ( ActiveAndroid, GreenDao ) </span> </li>
+                                            <li> Sqlite & Realm </li>
+                                            <li> Material design </li>
+                                            <li> Gradle </li>
+                                            <li> Android Studio </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row data-toggle spring">
+                                    <div class="col-md-12">
+                                        <ul>
+                                            <li> Spring MVC </li>
+                                            <li> Spring Integration </li>
+                                            <li> Spring Batch / Batch Admin </li>
+                                            <li> Spring Security </li>
+                                            <li> Spring Boot </li>
+                                            <li> Ant, Maven, Gradle </li>
+                                            <li> Apache velocity, JSP, Apache Tiles </li>
+                                            <li> MyBatis, Hibernate </li>
+                                            <li> JUnit, TestNG, EasyMock </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row data-toggle ios">
+                                    <div class="col-md-12">
+                                        <ul>
+                                            <li> Objective C, Swift </li>
+                                            <li> CoreData </li>
+                                            <li> AFNetworking </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row data-toggle node">
+                                    <div class="col-md-12">
+                                        <ul>
+                                            <li> MEAN </li>
+                                            <li> Grunt, Gulp </li>
+                                            <li> Backbone </li>
+                                            <li> Handlebars </li>
+                                            <li> Passport </li>
+                                            <li> Css </li>
+                                            <li> Casperjs, Phantomjs </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row data-toggle other">
+                                    <div class="col-md-12">
+                                        <ul>
+                                            <li> CI <span class="info"> ( Bamboo, Travis, Jenkins ) </span>  </li>
+                                            <li> Git, SVN </li>
+                                            <li> Docker </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-8 nopadding">
+                            <div >
+                                <span class="container-header"> projects 
+                                    <span class="data-toggle android active"> [ android ] </span> 
+                                    <span class="data-toggle spring"> [ spring ] </span>
+                                    <span class="data-toggle ios"> [ iOS ] </span>
+                                    <span class="data-toggle node"> [ nodejs ] </span>
+                                    <span class="data-toggle other"> [ other ] </span>
+                                </span>
+                            </div>
+                            <div class="skills-container skills-inner-bottom-right">
+                                <div class="row data-toggle android active">
+                                    <div class="col-md-12">
+                                        <ul>
+                                            <li>Newshub <a href="https://play.google.com/store/apps/details?id=com.korosmatick.newshub&hl=en"> https://play.google.com/store/apps/details?id=com.korosmatick.newshub </a></li>
+                                            <li>Rokmobile <a href="https://play.google.com/store/apps/details?id=com.rokmobile&hl=en"> https://play.google.com/store/apps/details?id=com.rokmobile </a></li>
+                                            <li>MyFitnessPal <a href="ttps://play.google.com/store/apps/details?id=com.myfitnesspal.android&hl=en"> https://play.google.com/store/apps/details?id=com.myfitnesspal.android </a> </li>
+                                            <li> Geopoll app <a href="https://play.google.com/store/apps/details?id=com.mobileaccord.geopoll"> https://play.google.com/store/apps/details?id=com.mobileaccord.geopoll </a>  </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row data-toggle spring">
+                                    <div class="col-md-12">
+                                        <ul>
+                                            <li> Server side API for Newshub: the crawler runs on tomcat container and the whole infrastructure is Spring MVC app </li>
+                                            <li> Most of the wep applications on my github account <a href="https://github.com/koros?tab=repositories"> https://github.com/koros?tab=repositories </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row data-toggle ios">
+                                    <div class="col-md-12">
+                                        <ul>
+                                            <li>Rokmobile <a href="https://itunes.apple.com/us/app/rok-music/id868009937"> https://itunes.apple.com/us/app/rok-music/id868009937 </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row data-toggle node">
+                                    <div class="col-md-12">
+                                        <ul>
+                                            <li> Node.js scraper <a href="https://github.com/koros/js-scraper"> https://github.com/koros/js-scraper </a>  </li>
+
+                                            <li> Geopoll app <a href="https://play.google.com/store/apps/details?id=com.mobileaccord.geopoll"> https://play.google.com/store/apps/details?id=com.mobileaccord.geopoll </a>  </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row data-toggle other">
+                                    <div class="col-md-12">
+                                        <ul>
+                                            <li> Other </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="row footer">
+                <div class="col-md-8 social">
+                    <ul>
+                        <li><a href="https://github.com/koros"><i class="fa fa-lg fa-github"></i> </a></li>
+                        <li><a href="http://stackoverflow.com/users/1885786/korosmatick"><i class="fa fa-lg fa-stack-overflow"></i> </a></li>
+                        <li><a href="https://www.linkedin.com/in/koros-g-24877528"><i class="fa fa-lg fa-linkedin"></i> </a></li>
+                        <li><a href="https://twitter.com/aRAPkoros"><i class="fa fa-lg fa-twitter"></i> </a></li>
+                        <li><a href="https://plus.google.com/u/0/+korosvapnik"><i class="fa fa-lg fa-google-plus"></i> </a></li>
+                        <li><a href="error.html"><i class="fa fa-lg fa-pinterest"></i> </a></li>
+                        <li><a href="error.html"><i class="fa fa-lg fa-instagram"></i> </a></li>
+                        <li><a href="error.html"><i class="fa fa-lg fa-facebook"></i>  </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 text-right copyright-div">
+                    <span class=""> &copy; <script>document.write(new Date().getFullYear());</script> korosmatick.</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
