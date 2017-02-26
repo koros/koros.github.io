@@ -74,6 +74,7 @@ canvas {
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 .skills-list {
     border-radius: 3px;
@@ -366,4 +367,8 @@ a:hover, a:active {
 span.active {
     display: inline;
     color: gray;
+}
+.info {
+    color: #FFFF00; 
+    font-size: 0.8em;
 }
