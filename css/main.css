@@ -89,17 +89,21 @@ canvas {
     margin-bottom: 5px;
     margin-left: 5px;
     height: 150px;
+    overflow:hidden; 
+    overflow-y:scroll;
 }
 .skills-inner-top-right {
     border-color: gray;
     margin-left: 5px;
     margin-right: 5px;
     height: 150px;
+    overflow:hidden; 
+    overflow-y:scroll;
 }
 .skills-inner-bottom-left {
     border-color: white;
     margin-left: 5px;
-    height: 100px;
+    height: 110px;
     overflow:hidden; 
     overflow-y:scroll;
 }
@@ -108,7 +112,9 @@ canvas {
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    height: 100px;
+    height: 110px;
+    overflow:hidden; 
+    overflow-y:scroll;
 }
 .skills-container {
     background-color: black;
@@ -156,17 +162,6 @@ canvas {
 }
 ::-webkit-scrollbar-thumb:window-inactive {
     background: grey; 
-}
-/*
- * Row with equal height columns
- * --------------------------------------------------
- */
-.row-eq-height {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
 }
 .button {
     background-color: #4CAF50; /* Green */
