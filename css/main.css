@@ -29,7 +29,7 @@ canvas {
     border-radius: 5px;
     border-color: #00FF00;
     border-width: 1px;
-    border-style: double;
+    border-style: solid;
     background-image: url("../images/matrix-background.png");
     position: absolute;
     top: 10%;
@@ -74,6 +74,7 @@ canvas {
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 .skills-list {
     border-radius: 3px;
@@ -347,10 +348,14 @@ a:hover, a:active {
 .my-nav:hover {
     color: white;
     background-color: #3465A4;
+    /*border: 1px solid #3465A4;
+    border-radius: 0px;*/
 }
 .my-nav-active {
     color: white;
     background-color: #3465A4;
+    /*border: 1px solid #3465A4;
+    border-radius: 3px;*/
 }
 .data-toggle {
     display: none;
@@ -364,5 +369,10 @@ span.active {
 }
 .info {
     color: #FFFF00; 
-    font-size: 0.8em;"
+    font-size: 0.8em;
+}
+.verbose {
+    color: #C71585; 
+    font-size: 0.8em;
+    font-weight: bold;
 }
