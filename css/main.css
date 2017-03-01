@@ -286,15 +286,11 @@ a:hover, a:active {
     src: url("../fonts/ocratxt.ttf")
 }
 @font-face {
-    font-family:"monaco";
-    src: url("../fonts/monaco.ttf")
-}
-@font-face {
     font-family:"Ubuntu";
     src: url("../fonts/ubuntu-font-family-0.83/Ubuntu-M.ttf")
 }
 body { 
-    font-family: 'Ubuntu', 'Ocr', 'Georgia', serif; 
+    font-family: 'Ubuntu', 'Ocr', 'Georgia', serif;
 }
 .dashes {
     background-color: black;
@@ -372,7 +368,7 @@ span.active {
     font-size: 0.8em;
 }
 .verbose {
-    color: #6496CE; 
+    color: #FF1493; 
     font-size: 0.8em;
     font-weight: bold;
 }
