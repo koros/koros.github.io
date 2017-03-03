@@ -35,7 +35,7 @@ canvas {
     top: 10%;
     left: 10%;
     width: 80%;
-    height: 530px;
+    height: auto;
 }
 .header-div{
 	width: 100%;
@@ -370,5 +370,4 @@ span.active {
 .verbose {
     color: #FF1493; 
     font-size: 0.8em;
-    font-weight: bold;
 }
