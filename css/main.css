@@ -26,9 +26,9 @@ canvas {
     margin-right: auto;
 }
 .content {
-    border-radius: 5px;
+    border-radius: 3px;
     border-color: #00FF00;
-    border-width: 1px;
+    border-width: 1.5px;
     border-style: solid;
     background-image: url("../images/matrix-background.png");
     position: absolute;
@@ -228,6 +228,7 @@ canvas {
     -webkit-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
     -ms-transition: all ease 0.3s;
+    margin-bottom: 10px;
 }
 .social i:hover {
     color: #FFF;
