@@ -49,7 +49,7 @@ function draw()
 
 setInterval(draw, 33);
 
-document.getElementById("date").innerHTML = getFormattedDate();
+document.getElementById("date").innerHTML = "Feb 26, 2017";//getFormattedDate();
 
 function getFormattedDate() {
     var d = new Date(),
